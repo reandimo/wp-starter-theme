@@ -1,0 +1,11 @@
+// Bootstrap 5
+@import '../../node_modules/bootstrap/scss/bootstrap-grid';
+
+// General
+@import "frontend/header";
+@import "frontend/footer";
+@import "frontend/general";
+
+// Pages
+@import "frontend/pages/home";
+
