@@ -2,10 +2,20 @@ const mix = require('laravel-mix');
 
 mix.setPublicPath('./public');
 
+mix.options({
+    fileLoaderDirs:  {
+        fonts: './fonts',
+        images: './images',
+    }
+});
+
 mix.webpackConfig({
     externals: {
         "jquery": "jQuery",
-    }
+    },
+    stats: {
+        children: true,
+    },
 });
 
 // ADMIN
