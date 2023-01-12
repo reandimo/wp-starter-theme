@@ -9,7 +9,7 @@
     define( 'THEME_DIR', get_stylesheet_directory() ); // our directory
 
     ## INCLUDE COMPOSER
-    $theme_autoload = THEME_DIR . '/includes/vendor/autoload.php';
+    $theme_autoload = THEME_DIR . '/vendor/autoload.php';
     if( file_exists( $theme_autoload ) ){
         include_once( $theme_autoload );
     }
