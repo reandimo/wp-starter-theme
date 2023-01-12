@@ -1,12 +1,10 @@
 <p align="center">
-    <img alt="Logo" src="[https://nativo.team/wp-content/themes/nativo-web/images/logo-sm.png](https://cdn-icons-png.flaticon.com/512/59/59137.png)" height="40">
+    <img alt="Logo" src="https://cdn-icons-png.flaticon.com/512/59/59137.png" height="40">
 </p>
  
 <p align="center">
   <strong>WordPress starter theme with Laravel Mix</strong>
 </p> 
-
-[![Latest Stable Version](http://poser.pugx.org/reandimo/google-sheets-helper/v)](https://packagist.org/packages/reandimo/google-sheets-helper) [![License](http://poser.pugx.org/reandimo/google-sheets-helper/license)](https://packagist.org/packages/reandimo/google-sheets-helper) [![PHP Version Require](http://poser.pugx.org/reandimo/google-sheets-helper/require/php)](https://packagist.org/packages/reandimo/google-sheets-helper)
 
 ## Requirements
 
