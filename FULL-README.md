@@ -6,7 +6,7 @@ We need to keep in mind that when you write code, other devs probably will work 
 
 ## Why bother
 
-We know each investor and project is different, and because of this, the goal of this guide is to set some standardization to follow when you’re creating a new WordPress project in Nativo Team.
+Every project is different and because of this, the goal of this guide is to set some standardizations to follow when you’re creating a new WordPress project.
 
 ## File Structure
 
@@ -187,7 +187,7 @@ https://github.com/Brain-WP/BrainMonkey: Brain Monkey is a tests utility for PHP
 
 ## Quick Tweaks
 
-- Change investor logo and background color on the `wp-login.php` page: just go to `theme-name/resources/styles/admin/wp-login.scss` and edit the CSS as you need.
+- Change website logo and background color on the `wp-login.php` page: just go to `theme-name/resources/styles/admin/wp-login.scss` and edit the CSS as you need.
 
 ## WordPress Development Resources
 
@@ -216,6 +216,14 @@ Below is a WordPress resource list to keep in mind for planning your project. Is
 
 - [Roots/Bedrock](https://docs.roots.io/bedrock/master/installation/#what-is-bedrock): WordPress boilerplate with a modern file structure.
 
-### Server Tools
+## License
 
-- **Webmin**: a free server stack and GUI for ubuntu that helps you manage everything from domains, web engines(nginx or apache) and comes with PHP.
+This Package is open source and released under MIT license. See the LICENSE file for more info.
+
+## Question? Issues?
+
+Feel free to open issues for suggestions, questions, and issues.
+
+## Who's Behind
+
+Renan Diaz, i'm dealing with PHP since 2017 & Google's API since 2019. Feel free to write me to my email (Please don't send any multi-level crap).
