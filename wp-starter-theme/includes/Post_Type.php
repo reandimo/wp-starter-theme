@@ -5,10 +5,10 @@
  * General functions to be used everywhere
  * All functions must be declared as static
  * 
- * @package    EscaleTheme
+ * @package    WPStarterTheme
  */
 
-namespace Escale\Theme;
+namespace WPStarter\Theme;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -22,14 +22,14 @@ class Post_Type
 	public function run()
 	{
 
-		add_action('init', array($this, 'escale_unregister_cpt'));
-		add_action('init', array($this, 'escale_register_cpt'), 0);
+		add_action('init', array($this, 'wpstarter_unregister_cpt'));
+		add_action('init', array($this, 'wpstarter_register_cpt'), 0);
 	}
 
 	/**
 	 * Unregister CPT
 	 */
-	function escale_unregister_cpt()
+	function wpstarter_unregister_cpt()
 	{
 		// unregister_post_type('project');
 	}
@@ -40,41 +40,41 @@ class Post_Type
 	*
 	*/
 
-	function escale_register_cpt()
+	function wpstarter_register_cpt()
 	{
 
 		$labels = array(
-			'name'                  => _x( 'Post Types', 'Post Type General Name', 'escale' ),
-			'singular_name'         => _x( 'Post Type', 'Post Type Singular Name', 'escale' ),
-			'menu_name'             => __( 'Post Types', 'escale' ),
-			'name_admin_bar'        => __( 'Post Type', 'escale' ),
-			'archives'              => __( 'Item Archives', 'escale' ),
-			'attributes'            => __( 'Item Attributes', 'escale' ),
-			'parent_item_colon'     => __( 'Parent Item:', 'escale' ),
-			'all_items'             => __( 'All Items', 'escale' ),
-			'add_new_item'          => __( 'Add New Item', 'escale' ),
-			'add_new'               => __( 'Add New', 'escale' ),
-			'new_item'              => __( 'New Item', 'escale' ),
-			'edit_item'             => __( 'Edit Item', 'escale' ),
-			'update_item'           => __( 'Update Item', 'escale' ),
-			'view_item'             => __( 'View Item', 'escale' ),
-			'view_items'            => __( 'View Items', 'escale' ),
-			'search_items'          => __( 'Search Item', 'escale' ),
-			'not_found'             => __( 'Not found', 'escale' ),
-			'not_found_in_trash'    => __( 'Not found in Trash', 'escale' ),
-			'featured_image'        => __( 'Featured Image', 'escale' ),
-			'set_featured_image'    => __( 'Set featured image', 'escale' ),
-			'remove_featured_image' => __( 'Remove featured image', 'escale' ),
-			'use_featured_image'    => __( 'Use as featured image', 'escale' ),
-			'insert_into_item'      => __( 'Insert into item', 'escale' ),
-			'uploaded_to_this_item' => __( 'Uploaded to this item', 'escale' ),
-			'items_list'            => __( 'Items list', 'escale' ),
-			'items_list_navigation' => __( 'Items list navigation', 'escale' ),
-			'filter_items_list'     => __( 'Filter items list', 'escale' ),
+			'name'                  => _x( 'Post Types', 'Post Type General Name', 'wpstarter' ),
+			'singular_name'         => _x( 'Post Type', 'Post Type Singular Name', 'wpstarter' ),
+			'menu_name'             => __( 'Post Types', 'wpstarter' ),
+			'name_admin_bar'        => __( 'Post Type', 'wpstarter' ),
+			'archives'              => __( 'Item Archives', 'wpstarter' ),
+			'attributes'            => __( 'Item Attributes', 'wpstarter' ),
+			'parent_item_colon'     => __( 'Parent Item:', 'wpstarter' ),
+			'all_items'             => __( 'All Items', 'wpstarter' ),
+			'add_new_item'          => __( 'Add New Item', 'wpstarter' ),
+			'add_new'               => __( 'Add New', 'wpstarter' ),
+			'new_item'              => __( 'New Item', 'wpstarter' ),
+			'edit_item'             => __( 'Edit Item', 'wpstarter' ),
+			'update_item'           => __( 'Update Item', 'wpstarter' ),
+			'view_item'             => __( 'View Item', 'wpstarter' ),
+			'view_items'            => __( 'View Items', 'wpstarter' ),
+			'search_items'          => __( 'Search Item', 'wpstarter' ),
+			'not_found'             => __( 'Not found', 'wpstarter' ),
+			'not_found_in_trash'    => __( 'Not found in Trash', 'wpstarter' ),
+			'featured_image'        => __( 'Featured Image', 'wpstarter' ),
+			'set_featured_image'    => __( 'Set featured image', 'wpstarter' ),
+			'remove_featured_image' => __( 'Remove featured image', 'wpstarter' ),
+			'use_featured_image'    => __( 'Use as featured image', 'wpstarter' ),
+			'insert_into_item'      => __( 'Insert into item', 'wpstarter' ),
+			'uploaded_to_this_item' => __( 'Uploaded to this item', 'wpstarter' ),
+			'items_list'            => __( 'Items list', 'wpstarter' ),
+			'items_list_navigation' => __( 'Items list navigation', 'wpstarter' ),
+			'filter_items_list'     => __( 'Filter items list', 'wpstarter' ),
 		);
 		$args = array(
-			'label'                 => __( 'Post Type', 'escale' ),
-			'description'           => __( 'Post Type Description', 'escale' ),
+			'label'                 => __( 'Post Type', 'wpstarter' ),
+			'description'           => __( 'Post Type Description', 'wpstarter' ),
 			'labels'                => $labels,
 			'supports'              => false,
 			'taxonomies'            => array( 'category', 'post_tag' ),
@@ -97,4 +97,4 @@ class Post_Type
 
 }
 
-(new \Escale\Theme\Post_Type())->run();
+(new \WPStarter\Theme\Post_Type())->run();

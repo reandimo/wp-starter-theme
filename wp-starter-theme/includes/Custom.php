@@ -3,10 +3,10 @@
 /**
  * Fired during plugin activation
  *
- * @package    EscaleTheme
+ * @package    WPStarterTheme
  */
 
-namespace Escale\Theme; 
+namespace WPStarter\Theme; 
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -30,4 +30,4 @@ class Custom
 
 }
 
-(new \Escale\Theme\Custom())->run();
+(new \WPStarter\Theme\Custom())->run();

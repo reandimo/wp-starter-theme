@@ -5,10 +5,10 @@
  * General functions to be used everywhere
  * All functions must be declared as static
  * 
- * @package    EscaleTheme
+ * @package    WPStarterTheme
  */
 
-namespace Escale\Theme;
+namespace WPStarter\Theme;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -47,4 +47,4 @@ class WP_Admin
 
 }
 
-(new \Escale\Theme\WP_Admin())->run();
+(new \WPStarter\Theme\WP_Admin())->run();

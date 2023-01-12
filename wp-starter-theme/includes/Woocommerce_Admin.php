@@ -3,10 +3,10 @@
 /**
  * Register custom post types
  * 
- * @package    EscaleTheme
+ * @package    WPStarterTheme
  */
 
-namespace Escale\Theme;
+namespace WPStarter\Theme;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -24,4 +24,4 @@ class Woocommerce_Admin
 
 }
 
-(new \Escale\Theme\Woocommerce_Admin())->run();
+(new \WPStarter\Theme\Woocommerce_Admin())->run();

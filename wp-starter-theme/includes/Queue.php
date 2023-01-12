@@ -5,11 +5,11 @@
  * General functions to be used everywhere
  * All functions must be declared as static
  * 
- * @package    EscaleTheme
+ * @package    WPStarterTheme
  */
 
-namespace Escale\Theme;
-use Escale\Theme\Common_Helper; 
+namespace WPStarter\Theme;
+use WPStarter\Theme\Common_Helper; 
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -47,4 +47,4 @@ class Queue
 
 }
 
-(new \Escale\Theme\Queue())->run();
+(new \WPStarter\Theme\Queue())->run();
