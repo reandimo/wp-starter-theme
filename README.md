@@ -257,4 +257,4 @@ Feel free to open issues for suggestions, questions, and issues.
 
 ## Who's Behind
 
-Renan Diaz, i'm dealing with PHP since 2017 & Wordpress since 2017. Feel free to write me to my email (Please don't send any multi-level crap).
+Renan Diaz, i'm dealing with PHP & Wordpress since 2017. Feel free to write me to my email (Please don't send any multi-level crap).
