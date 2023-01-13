@@ -19,7 +19,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body data-page="<?= is_front_page() ? 'home' : get_post_field( 'post_name' ) ?>" <?php body_class(); ?>">
+<body data-page="<?php body_class(); ?>">
 
 	<?php do_action( 'wp_body_open' ); ?>
 
