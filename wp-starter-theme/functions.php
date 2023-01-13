@@ -3,10 +3,10 @@
     // Exit if accessed directly.
     defined( 'ABSPATH' ) || exit;
 
-    define( 'THEME_SITENAME', 'Name' );
+    define( 'THEME_SITENAME', get_bloginfo( 'name' ) );
     define( 'THEME_VERSION', '1.0.0' );
     define( 'THEME_FILE', __FILE__ ); // this file
-    define( 'THEME_DIR', get_stylesheet_directory() ); // our directory
+    define( 'THEME_DIR', get_stylesheet_directory_uri() ); // our directory
 
     ## INCLUDE COMPOSER
     $theme_autoload = THEME_DIR . '/vendor/autoload.php';
