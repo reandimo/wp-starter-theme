@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
  * Plugin:
  * require_once dirname( __FILE__ ) . '/path/to/class-tgm-plugin-activation.php';
  */
-require_once THEME_DIR . '/includes/lib/class-tgm-plugin-activation.php';
+require_once THEME_PATH . '/includes/lib/class-tgm-plugin-activation.php';
 
 class TGM_Theme
 {
